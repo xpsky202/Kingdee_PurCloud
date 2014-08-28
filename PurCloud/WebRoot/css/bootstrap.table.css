@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+.table-list{}
+.table-list table{ width: 100%; margin-top: 8px; border:1px solid #ddd; *position: relative; z-index: 2;}
+.table-list table .a-center{ text-align: center !important;}
+.table-list table .uploader-file-info{ width:138px; text-align: left; color: #0362a5;}
+.table-list table .uploader-file-info .file-title{ width:70px;}
+.table-list td.up-td .uploader-icon{ vertical-align: -8px; *vertical-align: -4px;}
+.table-list table .uploader{ margin-bottom: 2px; display: inline-block; *display: inline; vertical-align: -6px;}
+.table-list th,
+.table-list td{}
+.table-list thead th{ height: 38px; font-weight: normal; border-bottom:1px solid #ddd; text-align: left; padding: 0 4px;}
+.table-list tbody td{ height: 38px; padding: 10px 4px; vertical-align: top; border-bottom: 1px solid #ddd;}
+.table-list .input-edit .item-title{ width:100px; zoom:1;}
+.table-list .input-edit .item-amount{ width:65px;}
+.table-list .input-edit .item-unit{ width:45px;}
+.table-list .input-edit .mce-linkbug{ display: none !important;}
+.table-list .title-cell{ position: relative;}
+.table-list .col-title{ padding-left: 30px;}
+.table-list .valid-tips{ margin-top: 3px;}
+.table-list .title-cell .go-lnk{ cursor: pointer;}
+.table-list .title-cell .del{ position: absolute; left: -20px; top:11px; display: none; overflow: hidden; width: 12px; height: 12px; cursor: pointer;}
+.table-list .title-cell .del i{ height: 3px; overflow: hidden; background-position:0 -715px; vertical-align: 8px;}
+.table-list .subject{ width: 300px;}
+.table-list tbody td.textarea-edit{ padding: 0;}
+.table-list .textarea-edit textarea{ width:100px; transition:height 0.3s; height:33px; padding: 0 4px; padding-top: 7px; resize:none; overflow: auto; display: block; line-height: 1.2; border: 1px solid #ddd; margin-top: 10px;}
+.table-list .textarea-edit textarea.edit{ border:1px solid #9AB26B; box-shadow: 0px 0px 1px 0px #9AB26B inset; height:80px; transition:height 0.3s; margin:0;}
+.table-list .textarea-edit textarea.edited{}
+.table-list .cate-cell{ position: relative;}
+.table-list .action-cell{ margin: 6px 0 0 0; color:#ddd;}
+.table-list .action-cell .go-lnk{ cursor: pointer;}
+.table-list .action-cell .add-row i{ margin-right: 6px; vertical-align: -2px; *vertical-align: 3px;}
+.table-list .diff-cate-tip{ margin-top: 4px; display: none;}
+.table-list .cate-input{ resize: none; width:156px; vertical-align:bottom; overflow: hidden;}
+.table-list .disabled .cate-input{ color: #999;}
+
+
+.offer-content{ border:0px solid #ddd; position: relative; background: #fff; padding: 0px 0 0px;}
+.offer-content .top-right-bg{ position: absolute; top: -1px; right:0; height: 5px; width: 5px; background:url(http://img.china.alibaba.com/cms/upload/2013/901/675/1576109_1213880884.png) no-repeat right top;}
+.offer-content .biezhen{ position: absolute; height: 68px; width: 56px; top: -32px; right: 46px; background: url(http://img.china.alibaba.com/cms/upload/2013/682/675/1576286_516878777.png) no-repeat;}
+.offer-content .line{ zoom:1; margin-bottom: 10px;}
+.offer-content .line:after{ display: block; clear:both; height: 0; content:'\0020';}
+.offer-content .line .line-title{ float:left; width:100px; margin: 0 10px 0 0; text-align: right;}
+.offer-content .line .line-title-l{ line-height: 35px;}
+.offer-content .line .line-content{ float:left;}
+.offer-content .line .single{ margin-left:40px;}
+.offer-content .text{ border:1px solid #dbdfe6; border-top-color: #abadb3; height: 20px; line-height: 20px; vertical-align: middle;}
+.offer-content .input-r-c,
+.submit-cell .input-r-c{ vertical-align: -2px; *vertical-align: middle;}
+.offer-content .other-require-trigger{ background: #F2F2F2; border:1px solid #ddd; color:#496AB4; cursor: pointer; padding: 4px 22px;}
