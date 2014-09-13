@@ -31,7 +31,7 @@ public abstract class AbstractDestApiHandler implements IDestApiHandler {
 		this.ctx = ctx;
 		UserInfo user = ctx.getSysParamInfo().getUserInfo();
 		//如果用户没有子账号，而调用API又需要时，创建子账号
-		if (StringUtils.isEmpty(user.getDestId()) && isNeedSubAccount()) {
+		if (isNeedSubAccount() && StringUtils.isEmpty(user.getDestId())) {
 			CreateSubAccountService.createSubAccount(ctx);
 		}
 		//获取调用上下文

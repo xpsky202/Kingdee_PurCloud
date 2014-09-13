@@ -18,20 +18,20 @@ import com.kingdee.purchase.platform.util.StringUtils;
 public class QuotationInfo implements IJSONTransfer {
 
 	private Long id;
-	private Date expireDate;
-	private String buyOfferId;
-	private String supplierMemberId;
-	private ContactInfo contactInfo;
-	private InvoiceType invoiceType;
-	private long freight;
-	private long totalPrice;
-	private String specifications;
+	private Date expireDate;		//到期日期
+	private String buyOfferId;		//询价单ID
+	private String supplierMemberId;	//阿狸巴巴供应商ID
+	private ContactInfo contactInfo;	//联系信息
+	private InvoiceType invoiceType;	//发票类型
+	private long freight;				//运费
+	private long totalPrice;			//总价
+	private String specifications;		//规格
 	private ObjectCollection<QuotationItem> supplyNoteItems;
 	private PayType payType;  //付款类型
 	private String paySpecification;  //付款说明
-	private Date gmtCreate;
-	private String prId;
-	private SupplierInfo supplier;
+	private Date gmtCreate;	//创建日期
+	private String prId;	//EAS采购申请单ID
+	private SupplierInfo supplier;	//供应商信息
 
 	public JSONObject toJSONObject() {
 		JSONObject result = new JSONObject();

@@ -299,6 +299,58 @@ public class JSONUtil {
 	}
 	
 	/**
+	 * 将供应商对象转换为json的字符串转换为供应商对象
+	 * @param value
+	 * @return
+	 */
+	public static SupplierInfo jsonSupplierInfo(JSONObject value) {
+		SupplierInfo supplierInfo = new SupplierInfo();
+		if (value == null || value.isEmpty()) {
+			return null;
+		}
+		JSONObject company = value.optJSONObject("supplier").optJSONObject("companyInfo");
+		if (company != null && !company.isEmpty()) {
+			SupplierCompanyInfo companyInfo = new SupplierCompanyInfo();
+			companyInfo.setCompanySummary(company.optString("companySummary"));
+			companyInfo.setName(company.optString("name"));
+			companyInfo.setPrincipal(company.optString("principal"));
+			companyInfo.setCompanyAddress(company.optString("companyAddress"));
+			companyInfo.setRegistrationId(company.optString("registrationId"));
+			companyInfo.setEnterpriseType(company.optString("enterpriseType"));
+			companyInfo.setDateOfEstablishment(company.optString("dateOfEstablishment"));
+			companyInfo.setRegisteredCapital(company.optString("registeredCapital"));
+			companyInfo.setBusinessTerm(company.optString("businessTerm"));
+			companyInfo.setBusinessScope(company.optString("businessScope"));
+			companyInfo.setBank(company.optString("bank"));
+			companyInfo.setBankAccount(company.optString("bankAccount"));
+			supplierInfo.setCompanyInfo(companyInfo);
+		}
+		
+		BusinessInfo businessInfo = new BusinessInfo();
+		JSONObject business = value.optJSONObject("supplier").optJSONObject("businessInfo");
+		if (business != null && !business.isEmpty()) {
+			businessInfo.setMainIndustries(business.optString("mainIndustries"));
+			businessInfo.setBusinessAddress(business.optString("businessAddress"));
+		}
+		supplierInfo.setBusinessInfo(businessInfo);
+		
+		SupplierContactInfo contactInfo = new SupplierContactInfo();
+		JSONObject contact = value.optJSONObject("supplier").optJSONObject("contactInfo");
+		if (contact != null && !contact.isEmpty()) {
+			contactInfo.setName(contact.optString("name"));
+			contactInfo.setMobile(contact.optString("mobile"));
+			contactInfo.setPhone(contact.optString("phone"));
+			contactInfo.setGender(contact.optString("gender"));
+			contactInfo.setFax(contact.optString("fax"));
+			contactInfo.setZipCode(contact.optString("zipCode"));
+			contactInfo.setContactAddress(contact.optString("contactAddress"));
+		}
+		supplierInfo.setContactInfo(contactInfo);
+		
+		return supplierInfo;
+	}
+	
+	/**
 	 * 处理日期字段
 	 * @param dateValue
 	 * @param fieldName

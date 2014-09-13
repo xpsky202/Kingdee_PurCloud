@@ -27,6 +27,7 @@ import java.util.TimeZone;
  */
 public final class DateUtil {
     public static final String DEFAULT_DATE_FORMAT_STR = "yyyyMMddHHmmssSSSZ";
+    public static final String DEFAULT_DATE_FORMAT_STR2 = "yyyy-MM-dd HH:mm:ss";
     private static SimpleDateFormat DEFAULT_FORMAT = new SimpleDateFormat(DEFAULT_DATE_FORMAT_STR);
     
     public static String format(Date d) {
@@ -66,6 +67,9 @@ public final class DateUtil {
             return null;
         }
         final SimpleDateFormat format;
+        if(source.indexOf("-")>0){
+        	pattern = DEFAULT_DATE_FORMAT_STR2;
+        }
         if(pattern != null){
             format = new SimpleDateFormat(pattern);
         }else{
