@@ -1,5 +1,6 @@
 package com.kingdee.purchase.platform.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +21,19 @@ public class SupplierServiceImpl implements ISupplierService{
 	}
 	
 	public int saveSupplier(SupplierInfo supplier) {
-		return supplierDao.saveSupplier(supplier);
+		if(getSupplierInfoByDestId(supplier.getDestId()) == null){
+			return supplierDao.saveSupplier(supplier);
+		}
+		return 0;
 	}
 	
 	public int saveSuppliers(List<SupplierInfo> suppliers) {
-		return supplierDao.batchSaveSupplier(suppliers);
+		List<SupplierInfo> tempSuppliers = new ArrayList<SupplierInfo>();
+		for(SupplierInfo info:suppliers){
+			if(getSupplierInfoByDestId(info.getDestId()) == null){
+				tempSuppliers.add(info);
+			}
+		}
+		return supplierDao.batchSaveSupplier(tempSuppliers);
 	}
 }
