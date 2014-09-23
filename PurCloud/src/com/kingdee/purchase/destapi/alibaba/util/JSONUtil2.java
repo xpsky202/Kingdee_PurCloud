@@ -105,7 +105,7 @@ public class JSONUtil2 {
 		result.setGmtCreate(parseDate(buyOff.opt("gmtCreate"), "gmtCreate"));
 		result.setPrId(buyOff.optString("prId"));
 		result.setIncludeTax(buyOff.optBoolean("includeTax"));
-	
+		result.setVisibleAfterEndQuote(buyOff.optBoolean("isVisibleAfterEndQuote"));
 		JSONObject contact = buyOff.optJSONObject("contactInfo");
 		if (contact != null) {
 			result.setContactInfo(json2ContactInfo(contact));

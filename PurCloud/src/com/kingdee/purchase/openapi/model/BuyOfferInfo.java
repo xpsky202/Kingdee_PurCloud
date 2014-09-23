@@ -28,7 +28,7 @@ public class BuyOfferInfo implements IJSONTransfer {
 	private boolean includeTax;
 	private AreaInfo receiptAddress;
 	private ContactInfo contactInfo;
-	
+	private boolean isVisibleAfterEndQuote; 
 
 	public JSONObject toJSONObject() {
 		JSONObject result = new JSONObject();
@@ -62,7 +62,8 @@ public class BuyOfferInfo implements IJSONTransfer {
 		
 		//是否含税
 		result.element("includeTax", includeTax);
-		
+		//询价单是否需要报价截止时间到期后才能查看报价单
+		result.element("isVisibleAfterEndQuote", isVisibleAfterEndQuote);
 		return result;
 	}
 
@@ -166,4 +167,14 @@ public class BuyOfferInfo implements IJSONTransfer {
 	public void setContactInfo(ContactInfo contactInfo) {
 		this.contactInfo = contactInfo;
 	}
+
+	public boolean isVisibleAfterEndQuote() {
+		return isVisibleAfterEndQuote;
+	}
+
+	public void setVisibleAfterEndQuote(boolean isVisibleAfterEndQuote) {
+		this.isVisibleAfterEndQuote = isVisibleAfterEndQuote;
+	}
+	
+	
 }
