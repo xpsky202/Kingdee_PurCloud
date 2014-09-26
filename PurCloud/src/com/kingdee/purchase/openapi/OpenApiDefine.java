@@ -40,4 +40,7 @@ public class OpenApiDefine {
 	public static final String Message_LoopList = "message.getMessageList:1";
 	
 	
+	//根据询价单ID获取在采购电商数据库中的报价单信息
+	public static final String Quotation_GetRptQuotationListByBuyOfferId = "quotation.getRptQuotationListByBuyOfferId:1";
+	
 }

@@ -17,7 +17,7 @@ import com.kingdee.purchase.platform.util.SpringContextUtils;
  * @author RD_jiangkun_zhu
  *
  */
-public class MessagePushFacade {
+public class MessagePushFacade{
 
 	private final static Map<Long, CookieHolder> cache = Collections.synchronizedMap(new HashMap<Long, CookieHolder>());
 	final static HttpHost proxy = new HttpHost("192.168.1.17",8080,"http");
@@ -28,7 +28,7 @@ public class MessagePushFacade {
 			return ;
 		}
 		store(messageInfo);
-		
+		MessageHandleTask.process(messageInfo);
 //		EnterpriseInfo enterpriseInfo = SystemParamsServiceFactory.getServiceInstance4Alibaba().getEnterpriseInfo(messageInfo.getEnterpriseId());
 //		boolean isEas = true;
 //		boolean result = false;

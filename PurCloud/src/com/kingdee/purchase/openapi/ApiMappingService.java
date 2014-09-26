@@ -45,6 +45,7 @@ public class ApiMappingService {
 		//消息轮循处理
 		apiMap.put(OpenApiDefine.Message_LoopList,"com.kingdee.purchase.openapi.impl.MessageLoopService");
 		
+		apiMap.put(OpenApiDefine.Quotation_GetRptQuotationListByBuyOfferId, "com.kingdee.purchase.openapi.impl.QuotationRptQueryListService");
 	}
 	
 	public static String getServiceClass(String apiName, String version){

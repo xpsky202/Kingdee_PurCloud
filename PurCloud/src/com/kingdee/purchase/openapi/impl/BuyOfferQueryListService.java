@@ -24,6 +24,11 @@ public class BuyOfferQueryListService extends OpenApiServiceImpl {
 		if (ParamCheckUtil.isEmpty(value)){
 			throw new PurBizException(PurExceptionDefine.REQUIRED_ARGS,new String[]{PRID,ParamCheckUtil.STRINGTYPE});
 		}
+		//解决传递过来的prID存在"+"号时，"+"号被换成了空格，下面操作进行还原
+		String tmpValue = value.toString();
+		tmpValue = tmpValue.replaceAll(" ", "+");
+		paramsMap.put(PRID, tmpValue);
+
 	}
 	
 	@Override

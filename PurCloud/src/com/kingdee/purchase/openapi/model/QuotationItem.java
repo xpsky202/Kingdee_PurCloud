@@ -13,13 +13,13 @@ import com.kingdee.purchase.platform.util.StringUtils;
 public class QuotationItem implements IJSONTransfer {
 
 	private Long id;
-	private String subject;
-	private Long productId;
-	private int amount;
-	private String unit;
-	private Long price;
-	private String prItemId;
-	private String taxRate;
+	private String subject;	//主题标题
+	private Long productId;	//商品ID
+	private int amount;		//数量
+	private String unit;	//型号
+	private Long price;		//单价
+	private String prItemId;	//EAS采购申请单分录ID
+	private String taxRate;		//税率
 	
 	public JSONObject toJSONObject() {
 		JSONObject result = new JSONObject();
