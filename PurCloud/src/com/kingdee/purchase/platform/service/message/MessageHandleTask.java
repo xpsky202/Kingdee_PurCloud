@@ -5,11 +5,9 @@ import java.util.Map;
 
 import net.sf.json.JSONObject;
 
-import com.kingdee.purchase.destapi.alibaba.util.JSONUtil;
 import com.kingdee.purchase.destapi.alibaba.util.JSONUtil2;
 import com.kingdee.purchase.openapi.context.RequestContext;
 import com.kingdee.purchase.openapi.model.QuotationInfo;
-import com.kingdee.purchase.openapi.model.SupplierInfo;
 import com.kingdee.purchase.platform.info.msg.MessageInfo;
 import com.kingdee.purchase.platform.info.msg.MsgTypeEnum;
 import com.kingdee.purchase.platform.processor.AbstractApiProcessor;

@@ -18,6 +18,17 @@
 			text-shadow: 0 1px 0 #fff;
 			background-color: #f7f5fa;
 		}
+		
+		.clsTable {
+			border: solid 1px #ccc;
+			padding: 3px;
+		}
+		
+		.clsTable tr th,td {
+			border: solid 1px #ccc;
+			line-height:25px;
+			width:250px;
+		}
     </style>
  </head>
   <body>
@@ -52,7 +63,8 @@
      				<h5 class="panel-title">平台介绍</h5>
 			  </div>
 			  <div class="panel-body">
-			  	请联系 <a href="mailto:sky_lv@kingdee.com">吕飞</a> 
+			  	<p>&nbsp;&nbsp;&nbsp;&nbsp;本平台为企业进行网络采购提供的开放服务平台，为金蝶ERP系统提供与互联网系统互联API服务，目前支持金蝶ERP通过本平台与阿里巴巴互联，提供企业注册、用户授权、发布询价、获取报价、上传订单等服务
+			  	</p>
 			  </div>
 		  </div>
           
@@ -63,7 +75,71 @@
      				<h5 class="panel-title">调用说明</h5>
 			  </div>
 			  <div class="panel-body">
-			  	请联系 <a href="mailto:sky_lv@kingdee.com">吕飞</a> 
+			  	<h6><b>请求URL注解</b></h6>
+			  	<p>http://192.168.204.131:8086/openapi/param2/1/com.kingdee.purchase.openapi/postBuyOffer</p>
+			  	<table class="clsTable">
+			  		<tr>
+			  			<th>样例URL</th><th>说明</th><th>备注</th>
+			  		</tr>
+			  		<tr>
+			  			<td>192.168.204.131:8086</td><td>开放平台公网地址</td><td></td>
+			  		</tr>
+			  		<tr>
+			  			<td>param2</td><td>请求协议格式</td><td></td>
+			  		</tr>
+			  		<tr>
+			  			<td>1/com.kingdee.purchase.openapi/postBuyOffer</td><td>/api version/api namespace/api name</td><td>/API版本/API命名空间/API接口名</td>
+			  		</tr>
+			  	</table>
+			  	<p style="padding-top:10px"><b>数据提交方式：Post</b></p>
+			  	<p><b>输出结果：</b></p>
+			  	<div class="img-wrap">
+            						<div style="background-color:#FBFBE7;color:#555;border: 1px dashed #2F6FAB;padding:10px;text-align:left">
+            							<pre >
+{
+"result":{
+	"total":1,
+	"toReturn":[{
+		"createTime":"20080806114526000+0800",
+		"sex":"先生",
+		"fax":"86  ",
+		"status":"enabled",
+		"sellerName":"tp4",
+		"companyName":"标兵邮箱公司",
+		"openJobTitle":"经理",
+		"product":"服装 服装",
+		"isEnterpriseTP":true,
+		"mobilePhone":"13590254875",
+		"isPersonalTP":false,
+		"addressLocation":
+                    {"address":"浙江宁波",
+                    "province":"浙江",
+                    "district":"宁波市",
+                    "country":"中国",
+                    "city":"宁波"
+                    },
+		"memberId":"tonytp4",
+		"industry":"服装",
+		"isTP":true,
+		"telephone":"86 0571 89875463"
+	}],
+	"success":false
+	}
+}
+            							</pre>
+                                    </div>
+                                    <p class="data-format"><b>错误输出示例:</b></p>
+            					<div class="img-wrap">
+            						<div style="background-color:#FBFBE7;color:#555;border: 1px dashed #2F6FAB;padding:10px;text-align:left">
+            							<pre >
+{
+"error_code":"450",
+"error_message":"Required argument memberId : expect [type: java.lang.String]",
+"exception":"Required argument memberId : expect [type: java.lang.String]"
+}
+            							</pre>
+            						</div>
+            					</div>
 			  </div>
 		  </div>
 		  
@@ -74,7 +150,7 @@
      				<h5 class="panel-title">权限说明</h5>
 			  </div>
 			  <div class="panel-body">
-			  	请联系 <a href="mailto:sky_lv@kingdee.com">吕飞</a> 
+			  	暂无权限控制 
 			  </div>
 		  </div>
 		  
@@ -201,7 +277,7 @@
       </div>
       
       <hr>
-      <footer style="padding:30px 0;">
+      <footer style="position:fixed;top:95%;left:1%">
         <p>&copy; 金蝶软件（中国）有限公司 2014</p>
       </footer>
     </div>

@@ -93,15 +93,15 @@ url=url==null?"":url;
 		      </form>
 	        </div>
 	      </div>
-      </div>
       
        <div class="form-signin">
 	      &nbsp;&nbsp;<a href="signup.jsp"><b>注 册</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
 	      &nbsp;&nbsp;<a>忘记密码?</a>
       </div>
+     </div>
    	<br>
-   	  <hr>
-      <footer style=" padding:30px 0;">
+	<hr>
+      <footer style="position:fixed;top:95%;left:1%">
         <p>&copy; 金蝶软件（中国）有限公司 2014</p>
       </footer>
     </div>

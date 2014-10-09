@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>采购电商云</title>
+    <title>采购开放平台</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
     	body {
@@ -31,19 +31,27 @@
    <%@include file="nav.jsp"%>
 
     <div class="container"> 
-	    <div class="row"> 
+	    <div class="row" style="height:650px"> 
 	        <div class="span12"> 
-	            <div class="thumbnail center well well-small text-center"> 
-	                 <h2>欢迎访问金蝶采购电商</h2>
- 				 	 <p class="lead"></p>
-       				 <p class="lead"><br></p>
-	            </div>     
-	        </div> 
-	    </div> 
+	            <div class="thumbnail center well well-small text-center" style="height:500px"> 
+	                 <h2>欢迎访问金蝶网络采购开放平台</h2>
+	                 <img src="res/ali_1.jpg" alt="图片无法显示"></img>
+	                 <img src="res/ali_2.jpg" alt="图片无法显示"></img>
+	                 <img src="res/ali_3.jpg" alt="图片无法显示" usemap="#Map"></img>
+ 				 	 
+	            </div>
+	            <div class="center well well-small text-center">
+	            	<img src="res/ali_4.jpg" alt="图片无法显示"></img>
+	            </div>
+	        </div>
+	    </div>
 	</div>
-	 
+	<map name="Map" id="Map">
+  		<area shape="rect" coords="780,50,959,102" href="login.jsp" target="_self"/>
+	</map>
+	
 	<hr>
-	<footer class="footer">
+	<footer style="position:fixed;top:95%;left:1%">
         <p>&copy; 金蝶软件（中国）有限公司 2014</p>
     </footer>
     <script src="js/jquery-1.11.0.min.js"></script>

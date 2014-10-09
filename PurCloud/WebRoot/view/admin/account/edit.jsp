@@ -88,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </div>
       
       <hr>
-      <footer style="padding:30px 0;">
+     <footer style="position:fixed;top:95%;left:1%">
         <p>&copy; 金蝶软件（中国）有限公司 2014</p>
       </footer>
     </div>

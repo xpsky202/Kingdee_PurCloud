@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><b>金蝶采购电商云</b></a>
+      <a class="navbar-brand" href="#"><b>金蝶采购开放平台</b></a>
     </div>
     <div class="navbar-collapse">
       <ul class="nav navbar-nav">

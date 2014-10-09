@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="PurCloud"
+  name="purchase"
   id="myeclipse.1393392897644"
   context-root="/purchase"
   j2ee-spec="5.0"
-  archive="PurCloud.war">
+  archive="purchase.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>

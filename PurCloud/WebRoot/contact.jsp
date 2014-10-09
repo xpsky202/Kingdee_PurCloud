@@ -26,8 +26,7 @@
 		  </div>
 		  <div class="panel-body">
 		    <a href="mailto:sky_lv@kingdee.com">吕飞 &nbsp;&nbsp; sky_lv@kingdee.com</a>  <br/>
-		    <a href="mailto:cary_lin@kingdee.com">林勇 &nbsp;&nbsp; cary_lin@kingdee.com</a> <br/> 
-		    <a href="mailto:jiangkun_zhu@kingdee.com">朱江琨 &nbsp;&nbsp; jiangkun_zhu@kingdee.com</a>  <br/>
+		    <a href="mailto:daniel_liu@kingdee.com">刘宇明 &nbsp;&nbsp; daniel_liu@kingdee.com</a> <br/> 
 		  </div>
 		</div>
     </div>
@@ -43,6 +42,9 @@
 		  </div>
 		</div>
     </div>
+    <footer style="position:fixed;top:95%;left:1%">
+        <p>&copy; 金蝶软件（中国）有限公司 2014</p>
+    </footer>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
