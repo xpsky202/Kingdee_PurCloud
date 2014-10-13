@@ -11,5 +11,5 @@ public final class ConfigConstant {
 	public static final String CONTENT_TYPE = "text/html";
 	
 	//日期编码
-	public static final String DateFormatPattern = "yyyy-MM-dd hh:mm:ss";
+	public static final String DateFormatPattern = "yyyy-MM-dd HH:mm:ss";
 }
