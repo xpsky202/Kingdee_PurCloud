@@ -1,1 +1,1 @@
-this is a eas purchase cloud project of kingdee,the author is sky!
+this is a eas purchase cloud project of kingdee for connect to alibaba!
