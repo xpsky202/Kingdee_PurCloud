@@ -43,7 +43,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		window.location.href="customer/company/edit";
     	}
     	function deleteCompany(obj) {
-    		event.preventDefault();
+    		if (event && event.preventDefault) {
+    			event.preventDefault();
+    		} else {  //ie下
+    			window.event.returnValue = false;
+    		}
     		if(confirm("确认要删除该公司吗？")) {
     			var companyId = $(obj).val();
     			$.get("customer/company/delete?companyId=" + companyId, 
